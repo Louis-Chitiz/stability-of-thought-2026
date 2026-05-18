@@ -40,7 +40,6 @@ library(pals)
 ### *plotting*
 
 ```{r}
-
 ## Removes leading zeros
 scaleFUN <- function(x) sprintf("%.2f", x)
 
@@ -110,7 +109,6 @@ master_set <- read.csv('master_set.csv')
 ## Parallel Analysis
 
 ```{r}
-
 test_pa <- fa.parallel(select(original, contains("_response")), fa = "pc", sim = F)
 
 
@@ -126,8 +124,7 @@ scree_data <- as.data.frame(test_pa$pc.values) %>%
 
 scree_data$exp_var <- (scree_data$real_vals/16)*100
 
-sum(scree_data[1:4,'exp_var'])
-
+paste("explained variance =", sum(scree_data[1:4,'exp_var']))
 ```
 
 ## Scree Plot
