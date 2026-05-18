@@ -1,13 +1,3 @@
----
-title: "stabilityofthought_code"
-output: html_document
-date: "2026-05-18"
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # Libraries
 
 ### *Data Manipulation*
